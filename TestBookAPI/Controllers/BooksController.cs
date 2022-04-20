@@ -136,6 +136,7 @@ namespace TestBookAPI.Controllers
             else
             {
                 db.Books.Remove(book);
+                db.SaveChanges();
                 return "Done";
             }
         }

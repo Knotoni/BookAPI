@@ -84,6 +84,7 @@ namespace TestBookAPI.Controllers
             else
             {
                 db.Authors.Remove(author);
+                db.SaveChanges();
                 return "Done";
             }
         }
